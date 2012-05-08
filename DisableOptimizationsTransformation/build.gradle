@@ -1,7 +1,10 @@
 apply plugin:'groovy'
 
-version = [	groovy: '1.8.6']
+version = '0.1-SNAPSHOT'
+sourceCompatibility = 1.5
+
+def versions = [ groovy: '1.8.6']
 
 repositories { mavenCentral() }
 
-dependencies { groovy "org.codehaus.groovy:groovy:$version.groovy" }
+dependencies { groovy "org.codehaus.groovy:groovy:$versions.groovy" }
